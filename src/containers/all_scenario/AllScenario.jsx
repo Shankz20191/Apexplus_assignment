@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { FaPlusCircle, FaEdit, FaTrash } from "react-icons/fa";
 import "./AllScenario.css";
 
 const AllScenario = ({ setComponentToShow }) => {
@@ -18,9 +19,15 @@ const AllScenario = ({ setComponentToShow }) => {
         <td>{scenario.name}</td>
         <td>{scenario.time}</td>
         <td>{scenario?.vehicles.length}</td>
-        <td>Add Vehicle</td>
-        <td>Edit</td>
-        <td>Delete</td>
+        <td>
+          <FaPlusCircle />
+        </td>
+        <td>
+          <FaEdit />
+        </td>
+        <td>
+          <FaTrash />
+        </td>
       </tr>
     );
   });

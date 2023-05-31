@@ -1,5 +1,7 @@
 import axios from "axios";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
+import "./Home.css";
 
 const Home = () => {
   const [allScenarios, setAllScenarios] = useState([]);
@@ -34,19 +36,25 @@ const Home = () => {
         <th>{vehicle.initial_position_x}</th>
         <th>{vehicle.initial_position_y}</th>
         <th>{vehicle.speed}</th>
-        <th>{vehicle.time}</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>{vehicle.direction}</th>
+        <th>
+          <FaEdit />
+        </th>
+        <th>
+          <FaTrash />
+        </th>
       </tr>
     );
   });
 
   return (
-    <div>
-      <select onChange={(e) => setSelectedScenarioID(e.target.value)}>
-        {scenarioDropdown}
-      </select>
-      <table>
+    <div className="container">
+      <div className="header">
+        <select onChange={(e) => setSelectedScenarioID(e.target.value)}>
+          {scenarioDropdown}
+        </select>
+      </div>
+      <table className="table">
         <thead>
           <tr>
             <th>Vehicle ID</th>
@@ -61,6 +69,10 @@ const Home = () => {
         </thead>
         <tbody>{renderTBody}</tbody>
       </table>
+      <div className="home-button">
+        <button style={{ backgroundColor: "#06d6a0" }}>Start Simulate</button>
+        <button style={{ backgroundColor: "#118ab2" }}>Stop Simulate</button>
+      </div>
     </div>
   );
 };
