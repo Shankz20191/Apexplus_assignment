@@ -9,7 +9,9 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:3000/scenarios");
+      const res = await axios.get(
+        "https://expensive-bustling-peace.glitch.me/scenarios"
+      );
       setAllScenarios(res.data);
       setSelectedScenarioID(res.data[0].id);
     };

@@ -14,7 +14,9 @@ const AddVehicle = ({ setComponentToShow }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:3000/scenarios");
+      const res = await axios.get(
+        "https://expensive-bustling-peace.glitch.me/scenarios"
+      );
       setAllScenarios(res.data);
       setSelectedScenario(res.data[0].id);
     };
@@ -43,7 +45,7 @@ const AddVehicle = ({ setComponentToShow }) => {
 
     const addVehicle = async () => {
       const res = await axios.get(
-        `http://localhost:3000/scenarios/${selectedScenario}`
+        `https://expensive-bustling-peace.glitch.me/scenarios/${selectedScenario}`
       );
 
       console.log(res.data.vehicles);
@@ -53,7 +55,7 @@ const AddVehicle = ({ setComponentToShow }) => {
       };
 
       await axios.patch(
-        `http://localhost:3000/scenarios/${selectedScenario}`,
+        `https://expensive-bustling-peace.glitch.me/scenarios/${selectedScenario}`,
         updatedScenario
       );
     };

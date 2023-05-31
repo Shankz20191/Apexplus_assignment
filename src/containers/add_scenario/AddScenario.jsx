@@ -17,7 +17,10 @@ const AddScenario = ({ setComponentToShow }) => {
       vehicles: [],
     };
 
-    axios.post("http://localhost:3000/scenarios", newScenario);
+    axios.post(
+      "https://expensive-bustling-peace.glitch.me/scenarios",
+      newScenario
+    );
     setScenarioName("");
     setTime("");
     console.log(e);

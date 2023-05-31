@@ -7,7 +7,9 @@ const AllScenario = ({ setComponentToShow }) => {
   const [allScenarios, setAllScenarios] = useState([]);
   useEffect(() => {
     const data = async () => {
-      const res = await axios.get("http://localhost:3000/scenarios");
+      const res = await axios.get(
+        "https://expensive-bustling-peace.glitch.me/scenarios"
+      );
       setAllScenarios(res.data);
     };
     data();
@@ -39,7 +41,9 @@ const AllScenario = ({ setComponentToShow }) => {
   const deleteAll = async () => {
     allScenarios.map(async (scenario) => {
       console.log(
-        await axios.delete(`http://localhost:3000/scenarios/${scenario.id}`)
+        await axios.delete(
+          `https://expensive-bustling-peace.glitch.me/scenarios/${scenario.id}`
+        )
       );
     });
     setAllScenarios([]);
