@@ -1,0 +1,44 @@
+.container {
+  width: 80%;
+}
+
+.header {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+  background-color: #1b263b;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.input-container input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  width: 80%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.button-container button {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+}

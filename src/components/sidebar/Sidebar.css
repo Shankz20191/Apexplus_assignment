@@ -1,0 +1,24 @@
+ul {
+  width: 100%;
+}
+
+li {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarButton {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #778da9;
+  font-weight: 700;
+}
+
+.sidebarButton:hover {
+  background-color: #1c5d99;
+  color: #fff;
+}

@@ -1,0 +1,21 @@
+.add-vehicle-input-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  width: 100%;
+  padding: 3.5rem;
+  background-color: #1b263b;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.add-vehicle-input-container input,
+select {
+  height: 2rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+}

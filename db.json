@@ -1,0 +1,48 @@
+{
+  "scenarios": [
+    {
+      "id": "1a13142b-36c0-49d2-9885-1bbb201aaa69",
+      "name": "scenarios1",
+      "time": 10,
+      "vehicles": [
+        {
+          "id": "2df73d68-239f-4503-86e7-9ccc08a39890",
+          "vehicle_name": "vehicle1",
+          "initial_position_x": "10",
+          "initial_position_y": "20",
+          "speed": "5",
+          "direction": "forward"
+        },
+        {
+          "id": "bd6cf4eb-ec81-4a1f-a3a6-c71876ffb229",
+          "vehicle_name": "vehicle2",
+          "initial_position_x": "30",
+          "initial_position_y": "40",
+          "speed": "8",
+          "direction": "upwards"
+        }
+      ]
+    },
+    {
+      "id": "21cc6e81-5c9b-4dbd-ab02-4e2459ea8673",
+      "name": "Scenario2",
+      "time": "90",
+      "vehicles": []
+    },
+    {
+      "id": "3110dd72-081c-4170-a786-3f40c3b52799",
+      "name": "scenario3",
+      "time": "40",
+      "vehicles": [
+        {
+          "id": "effe0560-1161-489b-90eb-e6911aa1bf68",
+          "vehicle_name": "vehicle1",
+          "initial_position_x": "3",
+          "initial_position_y": "4",
+          "speed": "3",
+          "direction": "Downward"
+        }
+      ]
+    }
+  ]
+}
