@@ -56,7 +56,7 @@ const Home = () => {
         style={{
           position: "absolute",
           display: "flex",
-          color:'white'
+          color: "white",
           justifyContent: "center",
           alignContent: "center",
           left: vehicle.initial_position_x + "px",
