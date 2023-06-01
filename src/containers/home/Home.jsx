@@ -49,6 +49,30 @@ const Home = () => {
     );
   });
 
+  const renderVehicle = selectedScenario?.vehicles.map((vehicle, idx) => {
+    console.log(vehicle.initial_position_x, vehicle.initial_position_y);
+    return (
+      <div
+        style={{
+          position: "absolute",
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          left: vehicle.initial_position_x + "px",
+          bottom: vehicle.initial_position_y + "px",
+          width: "20px",
+          height: "20px",
+          backgroundColor:
+            "#" + Math.floor(Math.random() * 16777215).toString(16),
+          borderRadius: "50%",
+        }}
+        key={vehicle.id}
+      >
+        {idx + 1}
+      </div>
+    );
+  });
+
   return (
     <div className="container">
       <div className="header">
@@ -75,6 +99,8 @@ const Home = () => {
         <button style={{ backgroundColor: "#06d6a0" }}>Start Simulate</button>
         <button style={{ backgroundColor: "#118ab2" }}>Stop Simulate</button>
       </div>
+
+      <div className="frame">{renderVehicle}</div>
     </div>
   );
 };

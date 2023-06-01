@@ -12,3 +12,12 @@
   border: none;
   border-radius: 0.25rem;
 }
+
+.frame {
+  position: relative;
+  margin-top: 2rem;
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+  border: #fff solid 1px;
+}
